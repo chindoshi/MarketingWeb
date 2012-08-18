@@ -1,0 +1,19 @@
+#contact-map {
+	margin: -2.5em auto 2.5em;
+	width:880px;
+}
+.btn-warning {
+ padding:15px;
+}
+.btn-warning:hover {
+ padding:15px;
+}
+
+@media (max-width: 767px) {
+	
+	#contact-map {
+		margin: -12px auto 0;
+		width:100%;
+	}
+	
+}

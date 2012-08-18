@@ -1,0 +1,25 @@
+.container .well {
+ padding:25px 19px 0px 19px;
+}
+.service-item h3{
+ font-size:18px;
+ margin-bottom:0px;
+ margin-top:10px;
+ font-weight:bold;
+}
+.service-item p {
+ margin-top:5px;
+}
+.btn-large {
+ font-size:30px;
+ font-weight: normal;
+padding: 14px 24px;
+margin-right: 10px;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+}
+.well i {
+	color: #2a5d0e !important;
+}
+

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+  <!--[if lt IE 6 ]><html class="ie ie6" lang="en"> <![endif]-->
+  <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+  <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+  <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>Fleetnext - Web-based fleet maintenance and management software</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />   
+    <meta name="description" content="Fleetnext is a web based vehicle fleet management software that helps organizations manage different aspects of its fleet operations." />
+    <meta name="keywords" content="Fleetnext,Fleet,Fleet Management,Web based,Fleet maintainance,Fleet software" />	
+    
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>  
+    <%= yield :head %>  
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Fredoka+One|Syncopate:700' rel='stylesheet' type='text/css' />
+    <link rel="shortcut icon" href="/assets/fleet_favicon.jpg" />
+    <%= csrf_meta_tags %>        
+    
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="assets/css/font-awesome-ie7.css">
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+    <![endif]-->
+   
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+  </head>
+
+<body>
+
+<div id="wrapper" class="clearfix">
+	
+	<div id="header">
+		
+		<div class="container">
+			
+			<h1 id="title">
+				<a href="/website/index">
+					Fleetnext
+				</a>			
+			</h1>
+			<p>Enabling smarter, leaner fleet management</p>
+			
+		</div> <!-- /container -->
+		
+	</div> <!-- /header -->	
+	
+	
+	<div id="nav" class="clearfix">
+		
+		<div class="container">
+		
+			<ul id="main-nav">
+				<li class="<%= 'active' if current_page?(website_index_path) %>" >
+					<a href="/website/index">HOME</a>
+				</li>
+				
+				<li class="<%= 'active' if current_page?(website_tour_path) %>" >
+					<a href="/website/tour">TOUR</a>
+				</li>
+				
+				<li class="<%= 'active' if current_page?(website_pricing_path) %>" >
+					<a href="/website/pricing">PRICING</a>
+				</li>
+				
+				<li class="<%= 'active' if current_page?(website_faq_path) %>" >
+					<a href="/website/faq">FAQ</a>
+				</li>
+				
+				<li class="<%= 'active' if current_page?(website_why_fleetnext_path) %>" >
+					<a href="/website/why_fleetnext">WHY US?</a>
+				</li>
+				
+				<li class="<%= 'active' if current_page?(website_contact_path) %>" >
+					<a href="/website/contact">CONTACT</a>
+				</li>
+                                
+				<li class="<%= 'active' if current_page?(website_index_path) %>" >
+				     <a href="http://signup.fleetnext.com" id="day">SIGNUP FREE TRIAL</a>
+				</li>
+				
+				
+			</ul>
+			
+		</div> <!-- /container -->
+		
+	</div> <!-- /nav -->
+	
+        <%= yield %>	
+	
+	<div id="footer">
+		
+		<div class="container">
+		
+			<div class="row">
+				
+				<div class="grid-3">
+					<h1 id="footer-logo">Fleetnext</h1>
+					<ul>
+					     <li><a href="/website/about">About</a></li>
+						 <li><a href="/website/contact">Contact us</a></li>
+						 <li><a href="/website/blog">Blog</a></li>
+						 <li><a href="/website/faq">FAQ</a></li>
+					</ul>
+				</div> <!-- /grid-4 -->
+				
+				<div class="grid-4">
+					
+					<h3>Social media</h3>
+					
+					<p>Find us elsewhere on internet</p>
+					
+					<ul class="social-icons-container">						
+						<li>
+							<a href="javascript:;">
+							<img src="/assets/fb.jpg" alt="Fleetnext">
+								
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+							<img src="/assets/twitter.jpg" alt="Fleetnext">
+								
+							</a>
+						</li>
+							
+						<li>
+							<a href="javascript:;" >
+								<img src="/assets/google.jpg" alt="Fleetnext">
+							</a>
+						</li>
+						
+					</ul>
+					
+				</div> <!-- /grid-4 -->
+				
+				<div class="grid-5">
+						
+					<h3><span class="slash"></span> Subscribe to our newsletter</h3>
+											
+					<form>
+						
+						<input type="text" name="subscribe_email" placeholder="Your Email" class="input-medium">		
+						<br/>
+						<input type="submit" class="btn btn-success" value="Subscribe" />
+					</form>					
+					<p>Stay informed with latest news and updates about Fleetnext.</p>					
+
+					
+					
+				</div><!-- /grid-4 -->
+				
+			</div> <!-- /row -->
+			
+		</div> <!-- /container -->
+		
+	</div> <!-- /footer -->
+	
+	
+	
+	<div id="copyright">
+		
+		<div class="container">
+			
+			<div class="row">
+			
+				<div id="rights" class="grid-6">
+				&copy; 2012 FLEETNEXT . All Rights Reserved.
+				</div> <!-- /grid-6 -->
+				
+				<div id="totop" class="grid-6">
+					<a href="http://achieveee.com" style="color:#222;"  >By Achieveee.</a>
+				</div> <!-- /grid-6 -->
+				
+			</div> <!-- /row -->
+			
+		</div> <!-- /container -->
+			
+	</div> <!-- /copyright -->
+	
+</div> <!-- /wrapper -->
+
+  </body>
+</html>
