@@ -78,11 +78,11 @@
 					<a href="/website/why_fleetnext">WHY US?</a>
 				</li>
 				
-				<li class="<%= 'active' if current_page?(website_contact_path) %>" >
+				<li class="<%= 'active' if current_page?(website_contact_path) || current_page?(website_contact_process_path) %>" >
 					<a href="/website/contact">CONTACT</a>
 				</li>
                                 
-				<li class="<%= 'active' if current_page?(website_index_path) %>" >
+				<li>
 				     <a href="http://signup.fleetnext.com" id="day">SIGNUP FREE TRIAL</a>
 				</li>
 				
@@ -104,10 +104,12 @@
 				<div class="grid-3">
 					<h1 id="footer-logo">Fleetnext</h1>
 					<ul>
-					     <li><a href="/website/about">About</a></li>
-						 <li><a href="/website/contact">Contact us</a></li>
-						 <li><a href="/website/blog">Blog</a></li>
-						 <li><a href="/website/faq">FAQ</a></li>
+                                                <li><a href="/website/faq">FAQ</a></li>
+                                                <li><a href="/website/about">About</a></li>
+						<li><a href="/website/contact">Contact us</a></li>
+                                               <li><a href="/website/careers">Join our team</a></li>
+                                               <li><a href="/website/privacy">Privacy policy</a></li>
+                                               <li><a href="/website/terms">Terms of use</a></li>
 					</ul>
 				</div> <!-- /grid-4 -->
 				

@@ -5,13 +5,13 @@
 <div id="page-title">
 
         <h1>Contact us</h1>
-        <p>Want to request more information about Fleetnext ?</p>
+        <p>Any questions, inquiries, suggestions, feedback ?</p>
 
 </div> <!-- /page-title -->
 
 
 <div id="contact-map">
-        <iframe width="100%" height="180" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Mumbai,+Maharashtra&amp;aq=0&amp;oq=mumbai&amp;sll=21.125498,81.914063&amp;sspn=23.507126,43.286133&amp;ie=UTF8&amp;hq=&amp;hnear=Mumbai,+Maharashtra&amp;t=m&amp;z=10&amp;ll=19.075984,72.877656&amp;output=embed"></iframe>
+  <iframe width="100%" height="180" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Runwal+Shopping+Center,+Chembur,+Maharashtra,+India&amp;aq=0&amp;oq=runwal+shpo&amp;sll=37.0625,-95.677068&amp;sspn=42.310334,89.296875&amp;ie=UTF8&amp;hq=&amp;hnear=Runwal+Shopping+Center,+Chembur,+Mumbai,+Maharashtra,+India&amp;t=m&amp;ll=19.059644,72.896819&amp;spn=0.003549,0.00456&amp;z=17&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Runwal+Shopping+Center,+Chembur,+Maharashtra,+India&amp;aq=0&amp;oq=runwal+shpo&amp;sll=37.0625,-95.677068&amp;sspn=42.310334,89.296875&amp;ie=UTF8&amp;hq=&amp;hnear=Runwal+Shopping+Center,+Chembur,+Mumbai,+Maharashtra,+India&amp;t=m&amp;ll=19.059644,72.896819&amp;spn=0.003549,0.00456&amp;z=17&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>        
 </div> <!-- /contact-map -->
 
 
@@ -27,35 +27,25 @@
                                 <h3>Send us a message</h3>
 
                                 <p>Use the form below to send us your query.</p>
+                                
+                                <%  if flash[:notice] %>
+                                <div class="alert alert-notice clearfix" data-alert="alert">
+                                <a class="close" data-dismiss="alert" href="#">×</a>
+                                <%= flash[:notice] %>
+                                </div>
+                                <% end %>
+                                
+                                <%= simple_form_for @message, :url => website_contact_process_path() do |form|  %>
+                                
+                                <%= form.input :name %>
+                                <%= form.input :email %>
+                                <%= form.input :phone %>
+                                <%= form.input :country %>
+                                <%= form.input :subject %>
+                                <%= form.input :message, :as => :text, :input_html => {:rows => 7}  %>
+                                <%= form.button :submit, "Submit", :class => 'btn btn-success btn-large' %>
 
-                                <form method="post" action="/contact">
-                                        <fieldset>
-                                                <div class="clearfix">
-                                                        <label for="name"><span>Name:</span></label>
-                                                        <div class="input">
-                                                                <input tabindex="1" size="18" id="name" name="name" type="text" value="">
-                                                        </div>
-                                                </div>
-
-                                                <div class="clearfix">
-                                                        <label for="email"><span>Email:</span></label>
-                                                        <div class="input">
-                                                                <input tabindex="2" size="25" id="email" name="email" type="text" value="" class="input-xlarge">
-                                                        </div>
-                                                </div>
-
-                                                <div class="clearfix">
-                                                        <label for="message"><span>Message:</span></label>
-                                                        <div class="input">
-                                                                <textarea tabindex="3" class="input-xlarge" id="message" name="body" rows="7"></textarea>
-                                                        </div>
-                                                </div>
-
-                                                <div class="actions">
-                                                        <button tabindex="3" type="submit" class="btn btn-success btn-large">Submit message</button>
-                                                </div>
-                                        </fieldset>
-                                </form>
+                                <% end %>                             
 
                         </div> <!-- /grid-8 -->
 
@@ -95,5 +85,3 @@
         </div> <!-- /container -->
 
 </div> <!-- /content -->
-
-

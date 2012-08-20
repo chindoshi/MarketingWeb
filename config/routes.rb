@@ -11,6 +11,12 @@ MarketingWeb::Application.routes.draw do
   get "website/faq"
 
   get "website/contact"
+  post "website/contact_process"
+  
+  get "website/about"
+  get "website/careers"
+  get "website/privacy"
+  get "website/terms"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
