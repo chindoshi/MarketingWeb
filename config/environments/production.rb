@@ -43,7 +43,7 @@ MarketingWeb::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  # config.assets.precompile += %w( search.js )
+  config.assets.precompile += %w( faq.js contact.css faq.css homepage.css jquery.lightbox-0.5.css plan.css tour.css font-awesome-ie7.css font-awesome.css)
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false

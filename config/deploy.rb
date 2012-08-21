@@ -9,6 +9,7 @@ ssh_options[:forward_agent] = true
 set :keep_releases, 3
 set :use_sudo, false
 ssh_options[:keys] = ["/home/chintdo/.ec2/b310ubuntu.pem"]
+default_run_options[:pty] = true
 
 role :web, "www.fleetnext.com"                         # Your HTTP server, Apache/etc
 role :app, "www.fleetnext.com"                           # This may be the same as your `Web` server
