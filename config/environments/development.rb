@@ -27,4 +27,21 @@ MarketingWeb::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  #mailer config on local machines
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.perform_deliveries = true
+  ActionMailer::Base.raise_delivery_errors = true
+
+
+  ActionMailer::Base.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :domain               => "lvh.me:3000",
+    :user_name            => "fleetnextdev@gmail.com",
+    :password             => "fleetdev",
+    :authentication       => "plain",
+    :enable_starttls_auto => true
+}
+  
 end

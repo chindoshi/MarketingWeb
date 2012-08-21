@@ -57,4 +57,13 @@ MarketingWeb::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  
+  #use sendmail smtp relay on ey
+  config.action_mailer.default_url_options = { :host => "fleetnext.com" }
+  config.action_mailer.delivery_method = :sendmail
+  config.action_mailer.sendmail_settings = { 
+    :arguments => "-i"
+  }  
+    
+  
 end
