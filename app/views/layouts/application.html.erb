@@ -58,7 +58,7 @@
 		<div class="container">
 		
 			<ul id="main-nav">
-				<li class="<%= 'active' if current_page?(website_index_path) %>" >
+				<li class="<%= 'active' if current_page?(website_index_path) || current_page?("/") %>" >
 					<a href="/website/index">HOME</a>
 				</li>
 				
