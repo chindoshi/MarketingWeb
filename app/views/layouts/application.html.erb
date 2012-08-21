@@ -31,6 +31,10 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 	
+    <% if Rails.env.production? %>
+      <%= render :partial => 'layouts/ga' %>
+    <%end%>    
+    
   </head>
 
 <body>
