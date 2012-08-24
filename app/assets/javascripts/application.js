@@ -9,4 +9,4 @@
 //= require bootstrap.min
 //= require fleet
 //= require jquery.lightbox-0.5
-//= require website.js
+//= require website
