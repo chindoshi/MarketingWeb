@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.fleetnext.com/</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.fleetnext.com/website/index</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.fleetnext.com/website/tour</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.fleetnext.com/website/pricing</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.fleetnext.com/website/faq</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.fleetnext.com/website/why_fleetnext</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.fleetnext.com/website/contact</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.fleetnext.com/website/about</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.fleetnext.com/website/careers</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.fleetnext.com/website/privacy</loc>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://www.fleetnext.com/website/terms</loc>
+  <changefreq>always</changefreq>
+</url>
+</urlset>
