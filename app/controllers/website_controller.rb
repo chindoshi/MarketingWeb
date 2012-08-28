@@ -42,5 +42,18 @@ class WebsiteController < ApplicationController
   
   def terms    
   end
+  
+  def subscribe
+    api = Mailchimp::API.new('48af77f3a52ab88961398127e55921ef-us5')
+    list_id = api.lists["data"][0]["id"]
+    response = api.listSubscribe({:id => list_id, :email_address => params[:email]})
+    
+    if response.is_a?(Hash)
+      redirect_to website_contact_path, :flash => {:notice => "Sorry, unable to unsubscribe you"}       
+    else
+       redirect_to website_contact_path, :flash => {:notice => "You have been successfully subscribed"} 
+    end
+    
+  end
 
 end

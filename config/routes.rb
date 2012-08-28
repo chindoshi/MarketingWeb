@@ -17,6 +17,8 @@ MarketingWeb::Application.routes.draw do
   get "website/careers"
   get "website/privacy"
   get "website/terms"
+  
+  post "website/subscribe"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
