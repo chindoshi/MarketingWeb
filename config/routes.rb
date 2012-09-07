@@ -14,7 +14,6 @@ MarketingWeb::Application.routes.draw do
   post "website/contact_process"
   
   get "website/about"
-  get "website/careers"
   get "website/privacy"
   get "website/terms"
   
