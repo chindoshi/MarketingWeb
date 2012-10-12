@@ -53,6 +53,10 @@
 	#responsive-nav {
 		display: block;
 	}
+        
+        #contactsales {
+            display: none;
+        }
 	
 	#masthead {
 		height: auto;

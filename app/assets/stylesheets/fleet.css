@@ -805,3 +805,5 @@ color:#7CBA55;
 .fleet_typo {
   font-size:16px;
 }
+
+#contactsales  { position:fixed; left:0%; top:40%; z-index: 99; }
