@@ -539,6 +539,11 @@ input {
 	overflow: hidden;
 	height: 33px;
 	margin-bottom: .75em;
+        
+ 	display: block;
+	color:#eeeeee;
+	font-family: 'Syncopate', cursive;
+	text-decoration:none;           
 }
 
 #footer a {
