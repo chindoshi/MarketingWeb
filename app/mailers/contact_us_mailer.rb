@@ -4,7 +4,7 @@ class ContactUsMailer < ActionMailer::Base
 
   def new_message(message)
     @message = message
-    mail(:subject => "[fleetnext.com] #{message.subject}")
+    mail(:subject => "[fleetnext.com] inquiry")
   end
 
 end
