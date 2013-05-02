@@ -1,7 +1,7 @@
  $(document).ready(function(){     
     
     //index
-    $('#masthead-carousel').carousel ({ interval: 25000});
+    $('#masthead-carousel').carousel ({ interval: 10000});
     
     //tour
     $('.gallery a').lightBox();
