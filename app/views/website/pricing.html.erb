@@ -7,7 +7,7 @@
 <div id="page-title">
 
         <h1>Pricing Plans</h1>
-        <p>Yearly subscription plans. No hidden costs. Affordable pricing. No long term commitments.</p>
+        <p>Yearly subscription plans. No hidden costs. No long term commitments.</p>
 
 </div> <!-- /page-title -->
 
@@ -33,7 +33,7 @@
                                                         </div> <!-- /plan-title -->
 
                                                         <div class="plan-price">
-                                                            <h3>Rs. 4,999</h3>
+                                                            <h3><%= format_currency(@country) %> <%= raw calc_price(4999,@country) %></h3>
                                                             <h4>per year</h4>
                                                          </div> <!-- /plan-price -->  
 
@@ -62,7 +62,7 @@
                                                         </div> <!-- /plan-title -->
 
                                                     <div class="plan-price">
-                                                        <h3>Rs. 9,999</h3>
+                                                        <h3><%= format_currency(@country) %> <%= raw calc_price(9999,@country) %></h3>
                                                         <h4>per year</h4>
                                                     </div> <!-- /plan-price -->
 
@@ -91,7 +91,7 @@
                                                         </div> <!-- /plan-title -->
 
                                                         <div class="plan-price">
-                                                            <h3>Rs. 19,999</h3>
+                                                            <h3><%= format_currency(@country) %> <%= raw calc_price(19999,@country) %></h3>
                                                             <h4>per year</h4>
                                                         </div> <!-- /plan-price -->  
 
@@ -122,7 +122,7 @@
 
 
                                                         <div class="plan-price">
-                                                            <h3>Rs. 29,999</h3>
+                                                            <h3><%= format_currency(@country) %> <%= raw calc_price(29999,@country) %></h3>
                                                             <h4>per year</h4>
                                                         </div> <!-- /plan-price -->  
 
@@ -153,7 +153,7 @@
                                                         </div> <!-- /plan-title -->
 
                                                         <div class="plan-price">
-                                                            <h3>Rs. 39,999</h3>
+                                                            <h3><%= format_currency(@country) %> <%= raw calc_price(39999,@country) %></h3>
                                                             <h4>per year</h4>
                                                         </div> <!-- /plan-price -->  
 

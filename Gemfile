@@ -21,7 +21,7 @@ gem 'therubyracer'
 gem 'country_select'
 gem 'simple_form'
 gem 'mailchimp'
-
+gem "geocoder"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

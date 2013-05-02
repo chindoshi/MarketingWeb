@@ -49,6 +49,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    geocoder (1.1.8)
     highline (1.6.15)
     hike (1.2.1)
     httparty (0.10.0)
@@ -143,6 +144,7 @@ DEPENDENCIES
   capistrano
   coffee-rails (~> 3.1.1)
   country_select
+  geocoder
   jquery-rails
   mailchimp
   mysql2

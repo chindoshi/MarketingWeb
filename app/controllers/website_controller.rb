@@ -7,6 +7,7 @@ class WebsiteController < ApplicationController
   end
 
   def pricing
+    @country = get_country_info()
   end
 
   def why_fleetnext
