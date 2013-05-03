@@ -26,7 +26,8 @@ set :rvm_type, :user # this is the money config, it defaults to :system
 
 # if you want to clean up old releases on each deploy uncomment this:
 # after "deploy:restart", "deploy:cleanup"
-after 'deploy:update_code', 'deploy:symlink_db'
+#after 'deploy:update_code', 'deploy:symlink_db'
+before 'bundle:install', 'deploy:symlink_db'
 
 # If you are using Passenger mod_rails uncomment this:
  namespace :deploy do
