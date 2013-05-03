@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   helper_method :get_country_info
 
   def get_country_info
-  	 request.location.country rescue "nil"
+  	 request.location.country rescue nil
   end
 
 end
