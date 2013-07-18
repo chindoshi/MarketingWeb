@@ -4,7 +4,7 @@ module ApplicationHelper
 		if country.eql?("India")
 			"Rs."
 		else
-			"$"
+			"US $"
 		end		
 	end
 
