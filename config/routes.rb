@@ -3,7 +3,7 @@ MarketingWeb::Application.routes.draw do
   get "website/index"
 
   get "website/tour"
-
+  get "website/features" 
   get "website/pricing"
 
   get "website/why_fleetnext"

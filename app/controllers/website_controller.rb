@@ -6,6 +6,9 @@ class WebsiteController < ApplicationController
   def tour
   end
 
+  def features
+  end
+
   def pricing
     @country = get_country_info()
   end
