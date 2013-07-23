@@ -108,8 +108,8 @@ input {
 */
 
 #header {
-	padding: 35px 0 5px;
-	background-color:#777;
+	padding: 35px 0 15px;
+	background-color:#ffffff;
 }
 .container {
   width:900px;
@@ -129,20 +129,17 @@ input {
 
 #header h1 a {
 	display: block;
-	color:#eeeeee;
+	color:#555555;
 	font-family: 'Syncopate', cursive;
-	text-decoration:none;
+	text-decoration:none; 
 }
 
 #header p {
    font-weight:bold;
    margin-bottom:0px;
    font-family: 'Verdana', sans-serif;
-   color:#eeeeee;
+   color:#777777;
 }
-
-
-
 
 /*------------------------------------------------------------------
 [4. Nav]
@@ -183,14 +180,14 @@ input {
 	
 	display: block;
 	
-	padding: 15px 25px 15px;
+	padding: 15px 20px 15px;
 	
-	color: #7cba55;
+	color: #666666;
 	
 	text-transform: uppercase;
 	
 	border-top: 1px solid transparent;
-	font-weight:bold;
+	font-weight:normal;
 	font-size:14px;
 }
 
@@ -207,7 +204,7 @@ input {
 #nav .container > #main-nav > li.active a {
 	padding-top: 12px;
 	background-color:#f3f3f3;
-	color: #7cba55;
+	color: #000000;
 	
 	border-top-color: #f3f3f3;
 	border-top-width: 4px;
@@ -257,9 +254,9 @@ input {
 	left: 10px;
 }
 
-#day {
-   color:#777 !important;
-	font-weight:bold !important;
+.day {
+   color:#FF9900 !important;
+	font-weight:normal !important;
 	font-size:14px !important;
 }
 
@@ -451,7 +448,7 @@ input {
 	padding: 30px 50px;
 	margin: 0 0px 2.5em;
 	
-	border-top: 1px solid #EEE;
+	#border-top: 1px solid #EEE;
 	border-bottom: 1px solid #EEE;
 	
 	background: #F3F3F3;
