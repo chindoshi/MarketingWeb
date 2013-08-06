@@ -55,6 +55,7 @@ p {
 
 h1 {
 	margin-bottom: .25em;
+	color: #666666;
 }
 
 h2 {
@@ -182,7 +183,7 @@ input {
 	
 	padding: 15px 20px 15px;
 	
-	color: #666666;
+	color: #000000;
 	
 	text-transform: uppercase;
 	
@@ -472,7 +473,8 @@ input {
 
 #page-title p {
 	margin-bottom: 0;
-	
+	color: #999999;
+
 	font-size: 15px;
 	width:880px;
 	margin-left:auto;
