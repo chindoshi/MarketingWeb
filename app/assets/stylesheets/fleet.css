@@ -457,7 +457,14 @@ input {
 #page-title h1 {
 	margin-bottom: .40em;
 	
-	font-weight: 600;
+	width:880px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#page-title h2 {
+	margin-bottom: .40em;
+	
 	width:880px;
 	margin-left:auto;
 	margin-right:auto;
