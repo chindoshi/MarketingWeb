@@ -19,7 +19,7 @@
 [1. Max Width: 767px]
 */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	
 	body {
 		padding: 0;
@@ -44,6 +44,10 @@
 	#nav {
 		padding: 0 25px;
 		margin-top:20px;
+	}
+
+	#big-buttons {
+		display: none;
 	}
 	
 	#main-nav {
