@@ -181,9 +181,9 @@ input {
 	
 	display: block;
 	
-	padding: 15px 20px 15px;
+	padding: 15px 45px 15px;
 	
-	color: #000000;
+	color: #888888;
 	
 	text-transform: uppercase;
 	
@@ -254,13 +254,6 @@ input {
 	top: -6px;
 	left: 10px;
 }
-
-#nav .day {
-   color:#FF9900 !important;
-	font-weight:normal !important;
-	font-size:14px !important;
-}
-
 
 /*------------------------------------------------------------------
 [5. Responsive Nav / #responsive-nav]

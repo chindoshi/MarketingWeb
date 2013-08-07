@@ -43,11 +43,19 @@
 	
 	<div id="header">
 		<div class="container">
+			<div class="row">
+			<div class="grid-8">
 			<h1 id="title">    
 				<a href="http://www.fleetnext.com">
 					Fleetnext
 				</a>			
-			</h1>	                           
+			</h1>	         
+			</div>
+			<div class="grid-4">
+				<a href="https://secure.fleetnext.com/login" class="day btn">LOGIN</a>
+				<a href="https://secure.fleetnext.com/signup" class="day btn btn-primary">SIGNUP FREE TRIAL</a>
+			</div>
+			</div>                  
 		</div> <!-- /container -->	
 	</div> <!-- /header -->	
 	
@@ -80,16 +88,6 @@
 				<li class="<%= 'active' if current_page?(website_contact_path) || current_page?(website_contact_process_path) %>" >
 					<a href="/website/contact">CONTACT</a>
 				</li>
-
-				<li>
-					<a href="https://secure.fleetnext.com/login" class="day">LOGIN</a>
-				</li>				
-                                
-				<li>
-				     <a href="https://secure.fleetnext.com/signup" class="day">SIGNUP FREE TRIAL</a>
-				</li>						
-				
-
 			</ul>
 			
 		</div> <!-- /container -->            
