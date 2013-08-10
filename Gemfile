@@ -22,6 +22,7 @@ gem 'country_select'
 gem 'simple_form'
 gem 'mailchimp'
 gem "geocoder"
+gem 'meta-tags', :require => 'meta_tags'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -40,3 +41,4 @@ group :test do
   # Pretty printed test output
   gem 'turn', '~> 0.8.3', :require => false
 end
+
