@@ -1,23 +1,30 @@
 MarketingWeb::Application.routes.draw do
   
-  get "website/index"
+  get "index", :to => "website#index", :as => "index"
 
-  get "website/tour"
-  get "website/features" 
-  get "website/pricing"
+  get "tour", :to => "website#tour", :as => "tour"
 
-  get "website/why_fleetnext"
+  get "features" , :to => "website#features", :as => "features"
 
-  get "website/faq"
+  get "pricing", :to => "website#pricing", :as => "pricing"
 
-  get "website/contact"
-  post "website/contact_process"
-  
-  get "website/about"
-  get "website/privacy"
-  get "website/terms"
-  
-  post "website/subscribe"
+  get "why-fleetnext", :to => "website#why_fleetnext", :as => "why_fleetnext"
+
+  get "faq", :to => "website#faq", :as => "faq"
+
+  get "contact", :to => "website#contact", :as => "contact"
+
+  post "contact_process", :to => "website#contact_process", :as => "contact_process"
+
+  get "about", :to => "website#about", :as => "about"
+
+  get "privacy-policy", :to => "website#privacy", :as => "privacy_policy"
+
+  get "terms-and-conditions", :to => "website#terms", :as => "terms_and_conditions"
+
+  post "subscribe", :to => "website#subscribe", :as => "subscribe"
+
+  root :to => 'website#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -68,7 +75,6 @@ MarketingWeb::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'website#index'
 
   # See how all your routes lay out with "rake routes"
 

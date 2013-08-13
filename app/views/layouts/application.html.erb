@@ -64,28 +64,28 @@
 		<div class="container">
 		
 			<ul id="main-nav">
-				<li class="<%= 'active' if current_page?(website_index_path) || current_page?("/") %>" >
-					<a href="/website/index">HOME</a>
+				<li class="<%= 'active' if current_page?(index_path) || current_page?("/") %>" >
+					<%= link_to "HOME", root_path %>
 				</li>
 				
-				<li class="<%= 'active' if current_page?(website_tour_path) %>" >
-					<a href="/website/tour">TOUR</a>
+				<li class="<%= 'active' if current_page?(tour_path) %>" >
+					<%= link_to "TOUR", tour_path %>
 				</li>
 
-				<li class="<%= 'active' if current_page?(website_features_path) %>" >
-					<a href="/website/features">FEATURES</a>
+				<li class="<%= 'active' if current_page?(features_path) %>" >
+					<%= link_to "FEATURES", features_path %>
 				</li>				
 				
-				<li class="<%= 'active' if current_page?(website_pricing_path) %>" >
-					<a href="/website/pricing">PRICING</a>
+				<li class="<%= 'active' if current_page?(pricing_path) %>" >
+					<%= link_to "PRICING", pricing_path %>
 				</li>
 				
-				<li class="<%= 'active' if current_page?(website_why_fleetnext_path) %>" >
-					<a href="/website/why_fleetnext">WHY US?</a>
+				<li class="<%= 'active' if current_page?(why_fleetnext_path) %>" >
+					<%= link_to "WHY US?", why_fleetnext_path %>
 				</li>
 				
-				<li class="<%= 'active' if current_page?(website_contact_path) || current_page?(website_contact_process_path) %>" >
-					<a href="/website/contact">CONTACT US</a>
+				<li class="<%= 'active' if current_page?(contact_path) || current_page?(contact_process_path) %>" >
+					<%= link_to "CONTACT US", contact_path %>
 				</li>
 			</ul>
 			
@@ -104,11 +104,11 @@
 				<div class="grid-3">
 					<h3 id="footer-logo">Fleetnext</h3>
 					<ul>
-                                                <li><a href="/website/faq">FAQ</a></li>
-                                                <li><a href="/website/about">About</a></li>
-						<li><a href="/website/contact">Contact us</a></li>
-                                               <li><a href="/website/privacy">Privacy policy</a></li>
-                                               <li><a href="/website/terms">Terms of use</a></li>
+                                               <li><%= link_to "FAQ", faq_path %></li>
+                                               <li><%= link_to "About", about_path %></li>
+											   <li><%= link_to "Contact us", contact_path %></li>
+                                               <li><%= link_to "Privacy policy", privacy_policy_path %></li>
+                                               <li><%= link_to "Terms of use", terms_and_conditions_path %></li>
 					</ul>
 				</div> <!-- /grid-4 -->
 				
@@ -121,14 +121,12 @@
 					<ul class="social-icons-container">						
 						<li>
 							<a href="http://www.linkedin.com/company/fleetnext">
-							<img src="/assets/linkedin_icon_black.gif" alt="Linkedin" />
-								
+								<img src="/assets/linkedin_icon_black.gif" alt="Link to Fleetnext linkedin profile" />								
 							</a>
 						</li>
 						<li>
 							<a href="http://www.twitter.com/fleetnextcorp">
-							<img src="/assets/twitter.jpg" alt="Twitter" />
-								
+								<img src="/assets/twitter.jpg"  alt="Link to Fleetnext twitter page" />								
 							</a>
 						</li>							
 						
@@ -140,7 +138,7 @@
 						
 					<h3><span class="slash"></span> Subscribe to our newsletter</h3>
 											
-					<form action="/website/subscribe" method="post">
+					<form action="/subscribe" method="post">
                                                 <input name="authenticity_token" type="hidden" value=<%=  form_authenticity_token %> />					
 						<input type="text" name="email" placeholder="Your Email" class="input-medium" />		
 						<br/>
@@ -166,12 +164,8 @@
 			
 			<div class="row">
 			
-				<div id="rights" class="grid-6">
+				<div id="rights" class="grid-12">
 				&copy; 2013 FLEETNEXT . All Rights Reserved.
-				</div> <!-- /grid-6 -->
-				
-				<div id="totop" class="grid-6">
-					<a href="http://achieveee.com" style="color:#222;"  >By Achieveee.</a>
 				</div> <!-- /grid-6 -->
 				
 			</div> <!-- /row -->

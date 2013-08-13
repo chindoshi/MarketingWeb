@@ -19,7 +19,7 @@
 
                 <div class="row">
                         <div id="welcome" class="grid-12">
-                                <img src="/assets/tour/home.png" alt="Fleet management and vehicle maintenance web-based software" />
+                                <%= image_tag "tour/home.png", :alt => "Fleet management and vehicle maintenance web-based software" %>
                                 <br/>
                                 <h2>Manage vehicle document renewals, preventive maintenance, service work-orders, fuel log, tyres (tires), meter readings and much more with Fleetnext</h2>
                                 <br/>
@@ -30,10 +30,10 @@
 
                 <div class="row" id="big-buttons">
                   <div class="grid-6">
-                    <a href="/website/tour" class="btn btn-large btn-primary pull-right">Take a tour</a> 
+                    <%= link_to "Take a tour", tour_path, :class => "btn btn-large btn-primary pull-right" %>
                   </div>
                   <div class="grid-6">
-                    <a href="/website/features" class="btn btn-large btn-danger">See features</a>
+                    <%= link_to "See features", features_path, :class => "btn btn-large btn-danger" %>
                   </div>
                 </div>
 
@@ -43,7 +43,7 @@
 
                         <div class="grid-3">
                           <div class="service-item">
-                                  <img src="/assets/tour/h1.png" alt="Fleetnext">
+                                 <%= image_tag "tour/h1.png", :alt => "Fleetnext description" %>                                  
                                  <h3>
                                           What is it ?
                                                 </h3>
@@ -52,15 +52,15 @@
                                                   simplify vehicle administration, save time and reduce costs.                                                   
                                                  </p>
                                                 <p>
-                                                  <a href="/website/tour" class="read">Take a tour &raquo;</a><br/>
-                                                  <a href="/website/features" class="read">See feature list &raquo;</a>
+                                                  <%= link_to "Take a tour", tour_path, :class => "read" %> <br/>
+                                                  <%= link_to "See features list", features_path, :class => "read" %>
                                                 </p>
                                 </div>
                         </div>
 
                         <div class="grid-3">
                                 <div class="service-item">
-                                        <img src="/assets/tour/h2.png" alt="Fleetnext">
+                                        <%= image_tag "tour/h2.png", :alt => "Any type of vehicle can be managed with Fleetnext" %>  
                                         <h3>
                                            Who is it for ?
                                         </h3> 
@@ -74,7 +74,7 @@
 
                         <div class="grid-3">
                                 <div class="service-item">
-                                        <img src="/assets/tour/h3.png" alt="Fleetnext">
+                                        <%= image_tag "tour/h3.png", :alt => "How does Fleetnext work" %>
                                         <h3>
                                              How does it work ?
                                         </h3> 
@@ -86,13 +86,13 @@
 
                         <div class="grid-3">
                                 <div class="service-item">
-                                        <img src="/assets/tour/h4.png" alt="Fleetnext">
+                                        <%= image_tag "tour/h4.png", :alt => "Fleetnext pricing" %>
                                         <h3>
                                                 What is the cost ?
                                         </h3> 
 
                                         <p>Fleetnext is an affordable solution that is offered on subscription (rental) basis. No long term commitment is required.</p>
-                                        <p><a href="/website/pricing" class="read">See pricing &raquo;</a></p>
+                                        <p><%= link_to "See pricing", pricing_path, :class => "read" %></p>
 
                                 </div>			
                         </div>

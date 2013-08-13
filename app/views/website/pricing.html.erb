@@ -7,7 +7,7 @@
 <div id="page-title">
 
         <h1>Pricing Plans</h1>
-        <p>Yearly subscription plans. No hidden costs. No long term commitments.</p>
+        <p>No hidden costs - support, hosting, backup and updates all included </p>
 
 </div> <!-- /page-title -->
 
@@ -47,7 +47,7 @@
                                                         </div> <!-- /plan-features -->
 
                                                         <div class="plan-actions">				
-                                                                <a href="http://secure.fleetnext.com/signup" class="btn btn-success">Signup</a>				
+                                                                <a href="https://secure.fleetnext.com/signup" class="btn btn-success">Signup</a>				
                                                         </div> <!-- /plan-actions -->
 
                                                 </div> <!-- /plan -->
@@ -76,7 +76,7 @@
                                                         </div> <!-- /plan-features -->
 
                                                         <div class="plan-actions">				
-                                                                <a href="http://secure.fleetnext.com/signup" class="btn btn-success">Signup</a>				
+                                                                <a href="https://secure.fleetnext.com/signup" class="btn btn-success">Signup</a>				
                                                         </div> <!-- /plan-actions -->
 
                                                 </div> <!-- /plan -->
@@ -105,7 +105,7 @@
                                                         </div> <!-- /plan-features -->
 
                                                         <div class="plan-actions">				
-                                                                <a href="http://secure.fleetnext.com/signup" class="btn btn-success">Signup</a>				
+                                                                <a href="https://secure.fleetnext.com/signup" class="btn btn-success">Signup</a>				
                                                         </div> <!-- /plan-actions -->
 
                                                 </div> <!-- /plan -->
@@ -136,7 +136,7 @@
                                                         </div> <!-- /plan-features -->
 
                                                         <div class="plan-actions">              
-                                                                <a href="http://secure.fleetnext.com/signup" class="btn btn-success">Signup</a>              
+                                                                <a href="https://secure.fleetnext.com/signup" class="btn btn-success">Signup</a>              
                                                         </div> <!-- /plan-actions -->
 
                                                 </div> <!-- /plan -->
@@ -167,7 +167,7 @@
                                                         </div> <!-- /plan-features -->
 
                                                         <div class="plan-actions">              
-                                                                <a href="http://secure.fleetnext.com/signup" class="btn btn-success">Signup</a>              
+                                                                <a href="https://secure.fleetnext.com/signup" class="btn btn-success">Signup</a>              
                                                         </div> <!-- /plan-actions -->
 
                                                 </div> <!-- /plan -->
@@ -197,7 +197,7 @@
                                                         </div> <!-- /plan-features -->
 
                                                         <div class="plan-actions">              
-                                                                <a href="http://secure.fleetnext.com/signup" class="btn btn-success">Signup</a>              
+                                                                <a href="https://secure.fleetnext.com/signup" class="btn btn-success">Signup</a>              
                                                         </div> <!-- /plan-actions -->
 
                                                 </div> <!-- /plan -->
@@ -246,7 +246,7 @@
                                                 <div class="faq-text">
                                                         <h4>Are there any setup fees ?</h4>
                                                         <p>No. This is covered in yearly subscription cost. There are no hidden fees for 
-                                                          setup, customer support or version updates.
+                                                          setup, hosting, customer support or version updates.
                                                         </p>    
                                            </div>   
                                         </li>                                      
@@ -256,9 +256,9 @@
                                                 <div class="faq-text">
                                                         <h4>What are my payment options ?</h4>
                                                         <p> To make a payment, log into your account and go to <i>Subscription</i> page under <i>Account Settings</i> menu.
-                                                            You can pay online using  <b>credit card </b> or  <b>debit card </b> through secure <i>Paypal express checkout</i> (<%= link_to "http://www.paypal.com", "http://www.paypal.com" %>).
+                                                            You can pay online using  <b>credit card </b> or  <b>debit card </b> (VISA, MASTER CARD) through secure <i>Paypal express checkout</i> (<%= link_to "http://www.paypal.com", "http://www.paypal.com" %>).
                                                             We also accept  <b>bank transfers </b>.
-                                                            Please <%= link_to "contact us", website_contact_path() %> for any help.</p>  
+                                                            Please <%= link_to "contact us", contact_path() %> for any help.</p>  
                                            </div>   
                                         </li>                                          
 
@@ -278,8 +278,7 @@
                                                 <div class="faq-text">
                                                    <h4>What happens after free trial expires ?</h4>
                                                     <p>Towards the end of your free trial period, we will contact you by email.
-                                                       You can choose to purchase one of our yearly subscription plans to continue using Fleetnext.
-                                                       In case you dont wish to use Fleetnext anymore, we will cancel your account.                                                       
+                                                       You can purchase one of our yearly subscription plans to continue the use of Fleetnext.                                                      
                                                     </p>	
                                             </div>
                                         </li>
@@ -287,6 +286,15 @@
                            </ol>
                   </div>
                 </div><!-- /row -->
+
+                <hr/>
+                     
+                <div class="row">
+                    <div class="grid-12 pagination-centered">
+                      <%= link_to "About fleet software as a service", why_fleetnext_path %>
+                    </div>
+                </div>
+
 
                 <%= render :partial => "signup" %>
 

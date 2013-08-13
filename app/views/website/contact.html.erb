@@ -29,7 +29,7 @@
                                 </div>
                                 <% end %>
                                 
-                                <%= simple_form_for @message, :url => website_contact_process_path() do |form|  %>
+                                <%= simple_form_for @message, :url => contact_process_path() do |form|  %>
                                 
                                 <%= form.input :name %>
                                 <%= form.input :email %>
@@ -50,7 +50,7 @@
                                         <h3> More Information</h3>
                                         <hr/>
                                         <p>
-                                            <a href="/website/about">About the company</a>
+                                            <%= link_to "About the company", about_path() %>
                                         </p>
                                         <hr/>                                    
                                         <p>
@@ -79,7 +79,9 @@
 
                         </div> <!-- /grid-4 -->
 
-                </div> <!-- /row -->						
+                </div> <!-- /row -->	
+
+                <%= render :partial => "signup" %>					
 
         </div> <!-- /container -->
 

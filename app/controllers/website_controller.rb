@@ -47,7 +47,7 @@ class WebsiteController < ApplicationController
     
     if @message.valid?
       ContactUsMailer.new_message(@message).deliver
-      redirect_to(website_contact_path, :notice => "Your message was sent.")
+      redirect_to(contact_path, :notice => "Your message was sent.")
     else
       flash.now.notice = "Please fill all fields."
       render "contact"
@@ -75,9 +75,9 @@ class WebsiteController < ApplicationController
     response = api.listSubscribe({:id => list_id, :email_address => params[:email]})
     
     if response.is_a?(Hash)
-      redirect_to website_contact_path, :flash => {:notice => "Sorry, unable to unsubscribe you"}       
+      redirect_to contact_path, :flash => {:notice => "Sorry, unable to unsubscribe you"}       
     else
-       redirect_to website_contact_path, :flash => {:notice => "You have been successfully subscribed"} 
+       redirect_to contact_path, :flash => {:notice => "You have been successfully subscribed"} 
     end
     
   end
