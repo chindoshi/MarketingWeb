@@ -24,6 +24,21 @@ MarketingWeb::Application.routes.draw do
 
   post "subscribe", :to => "website#subscribe", :as => "subscribe"
 
+  get "sitemap", :to => "website#sitemap", :as => "sitemap"
+
+  match '/website/index', :to => redirect('/index')  
+  match '/website/tour', :to => redirect('/tour')
+  match '/website/features', :to => redirect('/features')
+  match '/website/pricing', :to => redirect('/pricing')
+  match '/website/why_fleetnext', :to => redirect('/why-fleetnext')
+  match '/website/contact', :to => redirect('/contact')
+  match '/website/contact_process', :to => redirect('/contact_process')
+  match '/website/faq', :to => redirect('/faq')
+  match '/website/about', :to => redirect('/about')
+  match '/website/privacy', :to => redirect('/privacy-policy')
+  match '/website/terms', :to => redirect('/terms-and-conditions')
+  match '/website/subscribe', :to => redirect('/subscribe')
+
   root :to => 'website#index'
 
   # The priority is based upon order of creation:

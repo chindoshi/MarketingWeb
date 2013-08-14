@@ -82,4 +82,9 @@ class WebsiteController < ApplicationController
     
   end
 
+  def sitemap
+    @page_title = 'Sitemap'
+    @page_description = 'Index of links on this website'
+  end
+
 end
