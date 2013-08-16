@@ -116,7 +116,7 @@ input {
   width:900px;
   margin:0 auto;
 }
-#header h1 {
+#header h2 {
 	overflow: hidden;
 	
 	width: 312px;
@@ -128,7 +128,7 @@ input {
 	background: url(../images/title.jpg) no-repeat 0 0;*/
 }
 
-#header h1 a {
+#header h2 a {
 	display: block;
 	color:#555555;
 	font-family: 'Syncopate', cursive;
