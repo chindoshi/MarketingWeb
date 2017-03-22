@@ -17,7 +17,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'therubyracer'
+#gem 'therubyracer'
 gem 'country_select'
 gem 'simple_form'
 gem 'mailchimp'
