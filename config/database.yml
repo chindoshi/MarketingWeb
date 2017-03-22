@@ -1,0 +1,8 @@
+production:
+  adapter: mysql2
+  host: localhost
+  database: cbt_clone
+  username: root
+  password: root
+  pool: 5
+  timeout: 5000
