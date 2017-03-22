@@ -53,13 +53,6 @@ GEM
       capistrano (~> 3.5)
       capistrano-bundler
       puma (~> 3.4)
-    coffee-rails (3.2.2)
-      coffee-script (>= 2.2.0)
-      railties (~> 3.2.0)
-    coffee-script (2.4.1)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.12.2)
     countries (1.2.5)
       currencies (~> 0.4.2)
       i18n_data (~> 0.7.0)
@@ -160,7 +153,6 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rvm
   capistrano3-puma
-  coffee-rails
   country_select
   geocoder
   jquery-rails
