@@ -31,8 +31,18 @@ gem 'meta-tags', :require => 'meta_tags'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano'
-gem 'rvm-capistrano'
+#gem 'capistrano'
+#gem 'rvm-capistrano'
+
+group :development do
+    gem 'capistrano',         require: false
+    gem 'capistrano-rvm',     require: false
+    gem 'capistrano-rails',   require: false
+    gem 'capistrano-bundler', require: false
+    gem 'capistrano3-puma',   require: false
+end
+
+gem 'puma'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
